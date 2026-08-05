@@ -10,6 +10,11 @@ function App() {
   return (
     <>
       <section id="center">
+        <div className="flex w-full items-start justify-between bg-brand-bg p-8">
+            <a href="https://travingn.dev/">
+              <img src="" alt={"Travis Nguyen"} className="h-8 w-auto" />
+            </a>
+          </div>
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
