@@ -2,7 +2,7 @@ const slots = ['Coming soon', 'Coming soon', 'Coming soon', 'Coming soon', 'Comi
 
 function App() {
   return (
-    <>
+    <div>
       <header className="w-full px-8 py-8">
         <a
           href="https://travingn.dev/"
@@ -19,24 +19,9 @@ function App() {
           </h1>
           <p className="mt-3 text-lg font-semibold text-accent">
             prototypes by Travis
-      <section id="center">
-        <div className="flex w-full items-start justify-between bg-brand-bg p-8">
-            <a href="https://travingn.dev/">
-              <img src="" alt={"Travis Nguyen"} className="h-8 w-auto" />
-            </a>
-          </div>
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
           </p>
         </div>
-
+      <section id="center">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {slots.map((label, i) => (
             <div
@@ -46,9 +31,10 @@ function App() {
               <span className="text-lg font-bold text-black">{label}</span>
             </div>
           ))}
-        </div>
+          </div>
+        </section>
       </main>
-    </>
+    </div>
   )
 }
 
